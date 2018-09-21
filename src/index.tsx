@@ -3,16 +3,15 @@ import 'es6-shim';
 import 'es6-promise';
 import 'reset-css/reset.css';
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import store from '../src/store/index';
-import Cart from '../src/containers/desktop/Cart';
+import store from './store/index';
+import Cart from './containers/desktop/Cart';
 
-
-
-
-export default () => <div>About us
-
+ReactDOM.render(
     <Provider store={store}>
         <Cart/>
-    </Provider>
-</div>
+    </Provider>,
+    document.getElementById('root')
+);
+

@@ -1,0 +1,38 @@
+body {
+    height: 100%;
+    color: #111;
+    background-color: #fff !important;
+}
+
+header {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #eee;
+}
+
+header a {
+    display: block;
+    margin: 0 auto;
+    width: 1020px;
+}
+
+section {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+button {
+    padding: 0;
+    border: 0 none;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
