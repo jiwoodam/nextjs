@@ -41,7 +41,7 @@ class Cart extends React.Component<ICartProps, React.ComponentState> {
           }
         hello world
         <button onClick={this.click}>
-          버튼
+          버튼임
         </button>
       </div>
     );

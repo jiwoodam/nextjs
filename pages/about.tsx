@@ -8,11 +8,16 @@ import store from '../src/store/index';
 import Cart from '../src/containers/desktop/Cart';
 
 
+class About extends React.Component<null, React.ComponentState> {
+    render() {
+        return(
+            <div>About us
+                <Provider store={store}>
+                    <Cart/>
+                </Provider>
+            </div>
+        );
+    }
 
-
-export default () => <div>About us
-
-    <Provider store={store}>
-        <Cart/>
-    </Provider>
-</div>
+}
+export default About;
