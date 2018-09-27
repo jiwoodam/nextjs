@@ -5,7 +5,7 @@ import 'reset-css/reset.css';
 import * as React from 'react';
 import {Provider} from 'react-redux';
 import store from '../src/store/index';
-import Cart from '../src/containers/desktop/Cart';
+import Test from '../src/containers/desktop/Test';
 
 
 class About extends React.Component<null, React.ComponentState> {
@@ -13,7 +13,7 @@ class About extends React.Component<null, React.ComponentState> {
         return(
             <div>About us
                 <Provider store={store}>
-                    <Cart/>
+                    <Test/>
                 </Provider>
             </div>
         );

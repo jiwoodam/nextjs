@@ -4,26 +4,25 @@ import { updateSubstituteLayerPopupState } from "../../action/common";
 import { Dispatch } from "redux";
 import ICommon from "../../interface/ICommon";
 import { IImmutablePreset } from "../../interface/IImmutable";
-import "./Cart.css";
+//import "./reset.css";
 
 
 type typeGeneralFunction = (...args) => void;
 
-interface ICartProps {
+interface ITestProps {
   common: IImmutablePreset<ICommon>;
   updateSubstituteLayerPopupState: typeGeneralFunction;
 }
 
-class Cart extends React.Component<ICartProps, React.ComponentState> {
+class Test extends React.Component<ITestProps, React.ComponentState> {
 
   constructor(props) {
     super(props);
-
     this.click = this.click.bind(this);
   }
 
   componentWillMount() {
-    //eventInit(INIT_CART_VIEW);
+    //eventInit();
   }
 
   public componentDidMount(): void {
@@ -54,7 +53,7 @@ class Cart extends React.Component<ICartProps, React.ComponentState> {
 
 }
 
-const mapStateToProps = (state: ICartProps): Partial<ICartProps> => {
+const mapStateToProps = (state: ITestProps): Partial<ITestProps> => {
   return {
     common: state.common
   };
@@ -66,4 +65,4 @@ const mapDispatchToProps = (dispatch: Dispatch<any>): Partial<any> => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Test);

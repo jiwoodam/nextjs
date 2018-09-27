@@ -6,11 +6,11 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import store from './store/index';
-import Cart from './containers/desktop/Cart';
+import Test from './containers/desktop/Test';
 
 ReactDOM.render(
     <Provider store={store}>
-        <Cart/>
+        <Test/>
     </Provider>,
     document.getElementById('root')
 );

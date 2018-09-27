@@ -9,7 +9,9 @@
     "dev": "node server.js",
     "build": "next build",
     "export": "next export",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "pm2-next": "NODE_ENV=production next build && pm2 start ./node_modules/next/dist/bin/next-start",
+    "pm2-next-cluster": "NODE_ENV=production next build && pm2 start ./node_modules/next/dist/bin/next-start -i max"
   },
   "dependencies": {
     "@types/immutable": "^3.8.7",
